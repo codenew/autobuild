@@ -1,1 +1,0 @@
-require('./lib/run.js')(process.argv.slice(2));
