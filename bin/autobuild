@@ -1,2 +1,15 @@
 #!/usr/bin/env node
-require('../lib/run.js')(process.argv.slice(2));
+
+var commander = require('commander');
+
+commander
+  .version('0.1.0')
+  .option('-w, --watch', 'watch files')
+  .parse(process.argv);
+
+if(!commander.args[0]){
+	console.log('config file is empty!');
+	return;
+}
+
+require('../lib/run.js')(commander.args[0], commander);

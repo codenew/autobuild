@@ -9,7 +9,7 @@ module.exports = {
 				'1.js'
 			],
 
-			base: /js\/.*/
+			base: /\.js$/
 		},
 
 		css: {
