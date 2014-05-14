@@ -1,10 +1,12 @@
 #!/usr/bin/env node
-
 var commander = require('commander');
 
 commander
   .version('0.1.0')
+  .option('-v, --version', 'version')
   .option('-w, --watch', 'watch files')
+  .option('-c, --compress', 'compress files')
+  .option('-m, --md5', 'add md5')
   .parse(process.argv);
 
 if(!commander.args[0]){

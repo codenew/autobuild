@@ -2,7 +2,7 @@
   "name": "autobuild",
   "version": "0.1.0",
   "description": "autobuild",
-  "main": "bin/autobuild",
+  "main": "lib/core/autobuild.js",
   "scripts": {},
   "repository": {
     "type": "git",
